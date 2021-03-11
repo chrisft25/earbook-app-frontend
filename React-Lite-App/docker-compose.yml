@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    container_name: earbook-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - ${REACT_APP_PORT:-3000}:${REACT_APP_PORT:-3000}
+    tty: true
+    stdin_open: true
+    tmpfs:
+      - /tmp
+    volumes:
+        - '.:/app:delegated'
+        - '~/.ssh:/root/.ssh:delegated'
+
+   
