@@ -1,4 +1,4 @@
-# Requirimientos
+# Requerimientos
 - [Node.js](https://nodejs.org/es/download/) (probado en última LTS: ```14.16.0```)
 - [Docker](https://docs.docker.com/get-docker/) (opcional)
 
