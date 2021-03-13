@@ -14,6 +14,3 @@ RUN npm install --silent
 
 # add app
 ADD . .
-
-# start app
-CMD ["npm", "start"]
